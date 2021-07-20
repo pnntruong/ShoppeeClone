@@ -1,0 +1,103 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px){
+    :root{
+        --header-height: 64px;
+        --header-navbar-height: 0px;
+    }
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header-search__logo-img{
+        margin: 0 20px;
+        width: 130px;
+    }
+    .header-search_cart{
+        margin: 0 20px;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+    
+    .header-search_cart-list{
+        position: fixed;
+        top: var(--header-height);
+        width: unset;
+        left: 0;
+        right: 0;
+    }
+    .header-search_cart-list:before{
+        display: none;
+    }
+    .app_content{
+        margin-top: var(--header-height);
+    }
+    .app__filter-mobile{
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+    
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .header-search_cart-list{
+        position: fixed;
+        top: var(--header-height);
+        width: unset;
+        left: 0;
+        right: 0;
+    }
+    .header-search_cart-list:before{
+        display: none;
+    }
+    .header-search{
+        justify-content: space-between;
+    }
+    .header__search-icon{
+        display: block;
+    }
+    .header-search_cart{
+        margin-left: 0;
+    }
+    .header-search_search_bar{
+        position: fixed;
+        width: 100%;
+        top: var(--header-height);
+    }
+    #search-icon:checked ~ .header-search_search_bar{
+        display: flex;
+    }
+
+    .pargination-item-link{
+        margin: 0;
+        font-size: .8rem;
+    }
+    .pargination > .pargination-item:first-child > a {
+        margin: 0;
+    }
+    .pargination > .pargination-item:last-child > a {
+        margin: 0;
+    }
+    .pargination > .pargination-item:nth-child(6) {
+        display: none;
+    }
+    .pargination > .pargination-item:nth-child(5) {
+        display: none;
+    }
+    .footer__container{
+        padding-left: 20px;
+    }
+}
